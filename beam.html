@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
 
   </head>
   <body>
+    <form action="index.html" class="inline">
+      <button class="float-left submit-button" >Home</button>
+    </form>
+    <div class="about-me-image">
+      <img src = "images/iye_favicon.png" alt ="iye_icon">
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html#about-me">About Me</a></li>
+        <li><a href="index.html#product-gallery">Product Gallery</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="amal.html">Amal</a></li>
+        <li><a href="beam.html">Beam</a></li>
+        <li><a href="premier_plus.html">Premier Plus</a></li>
+      </ul>
+    </nav>
+
     <header>
       <h1>Beam Database</h1>
     </header>
-    <nav>
-
-    </nav>
   
   <main>
-    <img src = "images/iye_favicon.png" alt ="iye_icon">
 
-      <p>Passwords and login information are not only a common part of most people’s everyday life, 
+      <p class="product-explain">Passwords and login information are not only a common part of most people’s everyday life, 
         but they also control access to some of the most important aspects of it, such as banking and finances, medical services, social media, and other sensitive personal information. 
         You may have heard that passwords should be kept secret and never shared. However, the reality is that password sharing is more common than we think. 
         Have you ever shared a video streaming account like Netflix or Hulu? Managed joint banking accounts? Shared shopping accounts like Amazon? Or shared Google drive or Dropbox for photos with family members? 
@@ -23,23 +38,51 @@
 
       </p>
       
-      <p>Sending passwords via text messages or email isn’t a best practice because plain text can be intercepted, or easily found in the messages, inbox or sent folder. 
+      <p class="product-explain">Sending passwords via text messages or email isn’t a best practice because plain text can be intercepted, or easily found in the messages, inbox or sent folder. 
         Passwords written on a piece of paper are hard to keep track of, are easily lost, and aren’t secure when left on desktops, pinned to bulletin boards or taped to monitors. 
         There are also existing password management solutions that have password sharing capabilities, but the added complexity of additional features makes the point of entry seem intimidating. 
         Thus, Beam is a password management and sharing website that is simple to use and helps users share passwords effortlessly and securely.
       </p>
+
+    <div>
+      <p class="product-explain-text">User</p>
+      <img src = "images/beam_user.png" alt ="beam_user" class="product-explain-img">
+    </div>
     
-      <img src = "images/beam_accounts.png" alt ="beam_accounts">
-      <img src = "images/beam_activity.png" alt ="beam_activity">
-      <img src = "images/beam_diagram.png" alt ="beam_diagram">
-      <img src = "images/beam_notes.png" alt ="beam_notes">
-      <img src = "images/lbeam_shared_notes.jpeg" alt ="beam_shared_notes">
-      <img src = "images/beam_shared_url.png" alt ="beam_shared_url">
-      <img src = "images/beam_user.png" alt ="beam_user">
-    
-    </main>
-      <footer>
+    <div>
+      <p class="product-explain-text">Accounts</p>
+      <img src = "images/beam_accounts.png" alt ="beam_accounts" class="product-explain-img">
+    </div>
       
-      </footer>
+    <div>
+      <p class="product-explain-text">Shared_URL</p>
+      <img src = "images/beam_shared_url.png" alt ="beam_shared_url" class="product-explain-img">
+    </div>
+
+    <div>
+      <p class="product-explain-text">Activity</p>
+      <img src = "images/beam_activity.png" alt ="beam_activity" class="product-explain-img">
+    </div>
+
+    <div>
+      <p class="product-explain-text">Notes</p>
+      <img src = "images/beam_notes.png" alt ="beam_notes" class="product-explain-img">
+    </div>
+
+    <div>
+      <p class="product-explain-text">Shared_Notes</p>
+      <img src = "images/beam_shared_notes.png" alt ="beam_shared_notes" class="product-explain-img">
+    </div>
+
+    <div>
+      <p class="product-explain-text">Relationships Diagrams</p>
+      <img src = "images/beam_diagram.jpeg" alt ="beam_diagram" class="product-explain-img">
+    </div>
+      
+    </main>
+
+    <footer>
+      <p>Last Updated Oct 9, 2022</p>
+    </footer>
   </body>
 </html>
