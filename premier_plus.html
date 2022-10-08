@@ -1,26 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
 
   </head>
   <body>
+    <form action="index.html" class="inline">
+        <button class="float-left submit-button" >Home</button>
+    </form>
+    <div class="about-me-image">
+      <img src = "images/iye_favicon.png" alt ="iye_icon">
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html#about-me">About Me</a></li>
+        <li><a href="index.html#product-gallery">Product Gallery</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="amal.html">Amal</a></li>
+        <li><a href="beam.html">Beam</a></li>
+        <li><a href="premier_plus.html">Premier Plus</a></li>
+      </ul>
+    </nav>
+
     <header>
       <h1>Premier Plus Membership</h1>
     </header>
-    <nav>
-
-    </nav>
   
   <main>
-    <img src = "images/iye_favicon.png" alt ="iye_icon">
 
-      <p>Premier plus membership is a product anchored at high-frequency, medium/high-penetration (penetration is an indicator of a user’s neediness of premier ride; penetration = premier orders / total orders with DiDi) users. 
+      <p class="product-explain">Premier plus membership is a product anchored at high-frequency, medium/high-penetration (penetration is an indicator of a user’s neediness of premier ride; penetration = premier orders / total orders with DiDi) users. 
         As membership period is on monthly basis, we use their first-purchasing time as node to lock their demand for premier ride in the future months. 
         The below six benefits are included:
       </p>
       
-      <p>Discounts: coupon package, for one-time discount;\
+      <p class="product-explain">Discounts: coupon package, for one-time discount;\
         Dynamic price overflow free (price overflow exists in setting where demand is far over supply): price overflow exempt on supply-demand imbalance scenarios;
         Super speed order-taken: order been taken with priorities to save waiting time;
         Driver red packet: build up ecosystem of thankfulness and trust that users can thank driver for their service with the red packet;
@@ -28,13 +43,29 @@
         Exclusive customer service: membership-only customer service team;
       </p>
     
-      <img src = "images/premier_plus_homepage.png" alt ="premier_plus_homepage">
-      <img src = "images/premier_plus_layer.png" alt ="premier_plus_layer">
-      <img src = "images/premier_pulus_reminder.png" alt ="premier_pulus_reminder">
+      <div>
+        <h2>Product Main Pages</h2>
+      </div>
+
+      <div>
+        <p class="product-explain-text">Premier Plus Membership Homepage</p>
+        <img src = "images/premier_plus_homepage.png" class="product-explain-img" alt ="premier_plus_homepage">
+      </div>
+      
+      <div>
+        <p class="product-explain-text">Premier Plus Membership Layer</p>
+        <img src = "images/premier_plus_layer.png" class="product-explain-img" alt ="premier_plus_layer">
+      </div>
+
+      <div>
+        <p class="product-explain-text">Premier Plus Membership Reminder</p>
+        <img src = "images/premier_plus_reminder.png" class="product-explain-img" alt ="premier_pulus_reminder">
+      </div>
     
     </main>
-      <footer>
-      
-      </footer>
+    
+    <footer>
+      <p>Last Updated Oct 9, 2022</p>
+    </footer>
   </body>
 </html>
