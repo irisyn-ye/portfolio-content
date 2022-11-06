@@ -2,29 +2,33 @@
 <html lang="en" dir="ltr">
   <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VJK66S4HLG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VJK66S4HLG');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJK66S4HLG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
     
+      gtag('config', 'G-VJK66S4HLG');
+    </script> 
+    <script src="https://kit.fontawesome.com/9d6e116e72.js" crossorigin="anonymous"></script>   
+
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-moble.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMAL</title>
   </head>
   <body>
-    <form action="index.html" class="inline">
-      <button class="float-left submit-button" >Home</button>
-    </form>
-    
-    <main>
-    <img src = "images/iye_favicon.png" class="about-me-image" alt ="iye_icon">
+    <a href="index.html">
+      <i class="fa-solid fa-house-user"></i>
+    </a>
+
+    <div class="container">
+      <img src = "images/iye_favicon.png" class="icon" alt ="iye_icon">
 
     <nav>
-      <ul>
+      <ul class="nav_links">
         <li><a href="index.html#about-me">About Me</a></li>
         <li><a href="index.html#product-gallery">Product Gallery</a></li>
         <li><a href="index.html#contact">Contact</a></li>
@@ -38,50 +42,60 @@
       <h1>AMAL: Automated Legal Document Generation </h1>
     </header>
 
-  
-<!--   <main> -->
-
+    <div class="product-detail">
+      <h3>Why Did We Start?</h3>
+      <aside>
+        <p>
+          Amal, a new legal software program and platform, is proposed as a contributory solution for “achiev[ing] gender equality and empower all women and girls”. 
+        </p>
+      </aside>
       <p class="product-explain">During the past several decades, the world has seen improvements in legal gender parity, but the full adoption and application of women’s rights remains unseen. Though a global problem, women in the Middle East and North Africa (MENA) face greater gender inequality; according to the World Bank, over the past years MENA has made fewer legal reforms for gender equality than any region – just twelve. 
         MENA countries continue to reform regulations to improve gender equality but laws can only go so far. When it comes enabling women’s full economic, political, and social participation, many women are faced with barriers such as lack of financial resources, lack of knowhow, and fear of retaliation should exercise their rights. 
         Amal, a new legal software program and platform, is proposed as a contributory solution for “achiev[ing] gender equality and empower all women and girls”. Amal is a legal software system and simple online platform through which women in MENA countries can learn more about the legal rights granted to them in their country of residence, and secure and submit essential documentation needed for basic rights. 
         Such rights are crucial to women accessing further economic, educational, and social opportunities.
-
       </p>
-      
-      <p class="product-explain">
-        Women are literate, with access to Internet and the devices required to access it.
-        Our users want to empower themselves and become more independent; they are self-motivated.
-        Males are not always inclusive, preventing women from pursuing their own interests, and the legal system institutionalized this.
-        Credit cards are not commonly used for online payments. People prefer to pay in-person.
-      </p>
-
-
-
+    
       <div>
-        <p class="product-explain-text">Assumptions</p>
-        <img src = "images/ideation_1.jpeg" alt ="amal_ideation_1" class="product-explain-img">
-        <img src = "images/ideation_2.jpeg" alt ="amal_ideation_2" class="product-explain-img">
+      <h3>Assumptions</h3>
+        <ul>
+          <li class="product-explain">1. Women are literate, with access to Internet and the devices required to access it.</li>
+          <li class="product-explain">2. Our users want to empower themselves and become more independent; they are self-motivated.</li>
+          <li class="product-explain">3. Males are not always inclusive, preventing women from pursuing their own interests, and the legal system institutionalized this.</li>
+          <li class="product-explain">4. Credit cards are not commonly used for online payments. People prefer to pay in-person.</li>
+        </ul>
+        <div class="amal-ideation">
+          <img src = "images/ideation_1.jpeg" alt ="amal_ideation_1" class="product-explain-img" id="amal-ideation-1">
+          <img src = "images/ideation_2.jpeg" alt ="amal_ideation_2" class="product-explain-img" id="amal-ideation-2">
+        </div>
       </div>
       
       <div>
-        <p class="product-explain-text">Brand Guide</p>
-        <img src = "images/brand_guide.png" alt ="amal_brand_guide" class="product-explain-img">
-      </div>
+        <h3>Brand Guide</h3>
+        <ul>
+          <li class="product-explain">1. Color: Purple-bases, with grey as the complementary color</li>
+          <li class="product-explain">2. Symbol: Tulip, designating elegance, neutrality and reliability</li>
+          <li class="product-explain">3. Typography: Avenir + Sans serif</li>
+        </ul>
+          <img src = "images/brand_guide.png" alt ="amal_brand_guide" class="product-explain-img">
+        </div>
         
+      <h3>User Journey</h3>
+      <p class="product-explain">Both Mary and Jane are females from MENA countries, are looking for having their drivers’ lisence registered. They learnt about AMAL from the community service events. As they did not have resources to complete the process, they logged into the AMAL website through mobile phones and followed through each steps. After filling in the online form, they went to the closest office to pay for the fee in person. Two weeks later, they received the ID through their mail boxes.</p>
+      
       <div>
-        <p class="product-explain-text">Prototype</p>
+        <h3>Prototype</h3>
         <img src = "images/prototype_1.png" alt ="amal_prototype_1" class="product-explain-img">
         <img src = "images/prototype_2.png" alt ="amal_prototype_2" class="product-explain-img">
         <img src = "images/prototype_3.png" alt ="amal_prototype_3" class="product-explain-img">
         <img src = "images/prototype_4.png" alt ="amal_prototype_4" class="product-explain-img">
       </div>
+    </div>
     
-    </main>
 
     <footer>
-      <p>Last Updated Oct 9, 2022</p>
+      <p>Last Updated Nov 8, 2022</p>
     </footer>
-
+    </div>
   </body>
 </html>
 
