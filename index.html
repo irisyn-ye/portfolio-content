@@ -2,28 +2,32 @@
 <html lang="en" dir="ltr">
   <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VJK66S4HLG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJK66S4HLG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-VJK66S4HLG');
-</script>
-    
+      gtag('config', 'G-VJK66S4HLG');
+    </script>
+
+    <script src="https://kit.fontawesome.com/9d6e116e72.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-moble.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iris Yuning Ye</title>
   </head>
+
   <body>
-    <div class="skip">
-      <a href="index.html#about-me">Skip to Main Content</a>
-    </div>
-    <main>
-      <img src = "images/iye_favicon.png" class="about-me-image" alt ="iye_icon">
-      
+    <a class="skip" href="index.html">Skip to Main Content</a>
+    <div class="container">
+    
+      <img src = "images/iye_favicon.png" class="icon" alt ="iye_icon">
       <nav>
-        <ul>
+        <ul class="nav_links">
           <li><a class="active" href="index.html#about-me">About Me</a></li>
           <li><a href="index.html#product-gallery">Product Gallery</a></li>
           <li><a href="index.html#contact">Contact</a></li>
@@ -32,23 +36,23 @@
           <li><a href="premier_plus.html">Premier Plus</a></li>
         </ul>
       </nav>
-
+    
     <header>
-
       <h1>Hi, My name is Iris Yuning Ye! </h1>
       <p class="intro-text">I'm a product manager, strength conditioning coach and classical violinist.</p>
     </header>
-    
 
-    <div class="about-me-text">
-      <a id="about-me"></a>
+    <div class="about-me-image">
+      <img src="images/makenew.webp" alt="group-picture"/>
+    </div>
+    <div class="about-me-block">
+        <a id="about-me"></a>
       <h2>About Me</h2>
       <p class="about-me-text">I'm a first year graduate student at University of Michigan, School of Information. With three years of product management experience, my focus had been on user mobile experience. 
         As the sole undergrad product manager return offeree at Uber China (DiDi) ride-hailing sector, I own the roadmap for DiDi Premier product line. 
         By implementing the driver performance evaluation system, I helped DiDi increased transaction rate by 5% (average waiting time down by 20%). Besides, I also launcghed Premier discount system and it led to 50% increase of weekly rides. 
         I built DiDi driving school service from 0 to 1. The launched MVP had served 1000+ users within a month and brought in over 50% profit margin (the profit margin of Premier service is ~5%). 
       </p>
-      
       <p class="about-me-text">Besides my job, I have been devoting majority of spare time in helping the most vulnerable populations. 
         Since 2018, I had been training post-release inmates on their technical skills. I developed Information Bootcamp for 20+ post-release inmates and helped 10+ secured jobs in information field. 
         I'm well aware that I'm lucky to have been growing up with digital era while there are tons of non-profits lacked behind. By assisting Child and Family Services on search engine optimization during pandemic, I grew their website traffic by 30% which led to exposure of 50+ nations worldwide. 
@@ -56,7 +60,7 @@
       </p>
     </div>
     
-    <div class="product-gallery">
+    <div class="product-gallery-block">
         <a id="product-gallery"></a>
         <h2>Product Gallery</h2>
     </div>
@@ -77,21 +81,28 @@
       <img src = "images/yay_kars.jpeg" class="gallery-img" alt ="yay kars">
     </div>
 
-    <div class="contact-text">
+    <div class="contact-block">
       <a id="contact"></a>
       <h2>Contact</h2>
-      <p>Happy to chat about your ideas!</p>
-    </div>
-    <div class="contact-image">
+      <p class="contact-text">Happy to connect!</p>
+      <div class="contact-media">
       <a href="https://www.linkedin.com/in/irisyn-ye/">
-        <img src="images/linkedin.webp" alt="linkedin" class="contact-image">
+        <i class="fa-brands fa-linkedin"></i>
+        <!-- <img src="images/linkedin.webp" alt="linkedin" class="contact-image"> -->
       </a>
-    </div>      
-  </main>
+      <a href="https://github.com/irisyn-ye">
+        <i class="fa-brands fa-square-github"></i>
+      </a>
+      <a href="https://www.instagram.com/irisyn.ye/">
+        <i class="fa-brands fa-square-instagram"></i>
+      </a>
+      </div>
+    </div>
 
       <footer>
-        <p>Last Updated Oct 9, 2022</p>
+        <p>Last Updated Nov 8, 2022</p>
       </footer>
-  </body>
+    </div>
+    </body>
 </html>
 
