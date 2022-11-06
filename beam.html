@@ -2,30 +2,33 @@
 <html lang="en" dir="ltr">
   <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VJK66S4HLG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJK66S4HLG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-VJK66S4HLG');
+    </script>  
+    <script src="https://kit.fontawesome.com/9d6e116e72.js" crossorigin="anonymous"></script>  
 
-  gtag('config', 'G-VJK66S4HLG');
-</script>
-    
-    
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-moble.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beam</title>
   </head>
   <body>
-    <form action="index.html" class="inline">
-      <button class="float-left submit-button" >Home</button>
-    </form>
+    <a href="index.html">
+      <i class="fa-solid fa-house-user"></i>
+    </a>
 
-    <main>
-    <img src = "images/iye_favicon.png" class="about-me-image" alt ="iye_icon">
+    <div class="container">
+      <img src = "images/iye_favicon.png" class="icon" alt ="iye_icon">
 
     <nav>
-      <ul>
+      <ul class="nav_links">
         <li><a href="index.html#about-me">About Me</a></li>
         <li><a href="index.html#product-gallery">Product Gallery</a></li>
         <li><a href="index.html#contact">Contact</a></li>
@@ -39,59 +42,84 @@
       <h1>Beam Database</h1>
     </header>
   
-      <p class="product-explain">Passwords and login information are not only a common part of most people’s everyday life, 
+    <div class="product-detail">
+      <p class="product-explain">
+        Passwords and login information are not only a common part of most people’s everyday life, 
         but they also control access to some of the most important aspects of it, such as banking and finances, medical services, social media, and other sensitive personal information. 
         You may have heard that passwords should be kept secret and never shared. However, the reality is that password sharing is more common than we think. 
         Have you ever shared a video streaming account like Netflix or Hulu? Managed joint banking accounts? Shared shopping accounts like Amazon? Or shared Google drive or Dropbox for photos with family members? 
         There are countless scenarios where we might need to share passwords with spouses, family, friends, coworkers, and caretakers, etc.
-
       </p>
-      
+      <aside>
+        <p>
+          Password can be the worst security choice for data storage. Hacking is everywhere.  
+        </p>
+      </aside>
       <p class="product-explain">Sending passwords via text messages or email isn’t a best practice because plain text can be intercepted, or easily found in the messages, inbox or sent folder. 
         Passwords written on a piece of paper are hard to keep track of, are easily lost, and aren’t secure when left on desktops, pinned to bulletin boards or taped to monitors. 
         There are also existing password management solutions that have password sharing capabilities, but the added complexity of additional features makes the point of entry seem intimidating. 
         Thus, Beam is a password management and sharing website that is simple to use and helps users share passwords effortlessly and securely.
       </p>
+    
+    <h2>Beam Design Scope</h2>
+    <p class="product-explain">
+      The design of Beam is aimed at creating an intuitive and easy to use experience for the user to eliminate the anxiety that may occur with creating and managing passwords. When the user logs into Beam, they will see a dashboard where the user can view all the logins and secret notes that they have added to Beam.
+    </p>
+    <p class="product-explain">
+      The user can easily add new logins or notes into Beam. Once the new login or note is added, Beam will prompt the user and ask whether or not they would like to share this login or note with someone. If the user selects “Yes,” then they will be asked to set the duration of how many days they would like the secret link to be active. Once they click on “Generate Link,” the magic link will be generated for the user to send to others.
+    </p>
+    <p class="product-explain">
+      If the user views an individual account or note detail, then they will be able to see the magic link that was generated, the start date of when the link was generated, the duration, and whether or not it has expired. The user can also choose to regenerate a new magic link on this page for this particular login or note to be shared again.
+    </p>
+    <p class="product-explain">
+      Imagine James as a college student will move to another country in two weeks for a year abroad study. One day he would like to watch a movie via the Netflix account and he found the membership happen to be expired. He does not want to keep paying for his Netflix account just to watch that one movie, so he asks his roommate Jack if he can temporarily use his account. Jack agrees and uses Beam to easily share and manage his login information with James.
+      Imagine another scenario where you will need to help your parents or grandparents remember their online passwords. You can easily manage their passwords in Beam and simply send them a magic link when they need to access their online accounts.
+      Another scenario is if you need someone to manage your Instagram business account for 17 days while you are out of town. You can then use Beam to share a magic link with them and set the duration to expire in 17 days.
+    <p class="product-explain">
+      Currently, the design of Beam is from the sharer perspective. The assumption is that if the sharee receives the magic link and does not have a Beam account, they will be redirected to install the browser extension for our service. However, once the browser extension is installed, then they will be redirected to the login page of the particular website and have the username and password pre-populated.
+      From the database perspective, Beam will have 6 entities: User, Accounts, Notes, Shared_URL, Shared_Note, Activity.
+    </p>
 
+    <h2>Data Dictionary</h2>
     <div>
-      <p class="product-explain-text">User</p>
+      <h3>User</h3>
       <img src = "images/beam_user.png" alt ="beam_user" class="product-explain-img">
     </div>
     
     <div>
-      <p class="product-explain-text">Accounts</p>
+      <h3>Accounts</h3>
       <img src = "images/beam_accounts.png" alt ="beam_accounts" class="product-explain-img">
     </div>
       
     <div>
-      <p class="product-explain-text">Shared_URL</p>
+      <h3>Shared_URL</h3>
       <img src = "images/beam_shared_url.png" alt ="beam_shared_url" class="product-explain-img">
     </div>
 
     <div>
-      <p class="product-explain-text">Activity</p>
+      <h3>Activity</h3>
       <img src = "images/beam_activity.png" alt ="beam_activity" class="product-explain-img">
     </div>
 
     <div>
-      <p class="product-explain-text">Notes</p>
+      <h3>Notes</h3>
       <img src = "images/beam_notes.png" alt ="beam_notes" class="product-explain-img">
     </div>
 
     <div>
-      <p class="product-explain-text">Shared_Notes</p>
+      <h3>Shared_Notes</h3>
       <img src = "images/beam_shared_notes.png" alt ="beam_shared_notes" class="product-explain-img">
     </div>
 
     <div>
-      <p class="product-explain-text">Relationships Diagrams</p>
+      <h3>Relationship Diagram</h3>
       <img src = "images/beam_diagram.jpeg" alt ="beam_diagram" class="product-explain-img">
     </div>
       
-    </main>
 
     <footer>
-      <p>Last Updated Oct 9, 2022</p>
+      <p>Last Updated Nov 8, 2022</p>
     </footer>
+  </div>
   </body>
 </html>
