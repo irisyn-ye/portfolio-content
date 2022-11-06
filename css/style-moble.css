@@ -8,7 +8,7 @@ body {
     animation: fadeIn 3s;
     grid-row: 1 / span 1;
     grid-column: 2 / span 1;
-    text-align: center;
+    justify-content: center;
     padding-top: 30px;
 }
 
