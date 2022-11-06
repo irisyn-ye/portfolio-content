@@ -2,29 +2,33 @@
 <html lang="en" dir="ltr">
   <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VJK66S4HLG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJK66S4HLG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-VJK66S4HLG');
-</script>
+      gtag('config', 'G-VJK66S4HLG');
+    </script>
+    <script src="https://kit.fontawesome.com/9d6e116e72.js" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-moble.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Premier Plus Membership</title>
   </head>
   <body>
-    <form action="index.html" class="inline">
-        <button class="float-left submit-button" >Home</button>
-    </form>
-
-    <main>
-    <img src = "images/iye_favicon.png" class="about-me-image" alt ="iye_icon">
+    <a href="index.html">
+      <i class="fa-solid fa-house-user"></i>
+    </a>
+    
+    <div class="container">
+      <img src = "images/iye_favicon.png" class="icon" alt ="iye_icon">
 
     <nav>
-      <ul>
+      <ul class="nav_links">
         <li><a href="index.html#about-me">About Me</a></li>
         <li><a href="index.html#product-gallery">Product Gallery</a></li>
         <li><a href="index.html#contact">Contact</a></li>
@@ -37,45 +41,44 @@
     <header>
       <h1>Premier Plus Membership</h1>
     </header>
-  
 
-
+    <div class="product-detail">
       <p class="product-explain">Premier plus membership is a product anchored at high-frequency, medium/high-penetration (penetration is an indicator of a user’s neediness of premier ride; penetration = premier orders / total orders with DiDi) users. 
         As membership period is on monthly basis, we use their first-purchasing time as node to lock their demand for premier ride in the future months. 
         The below six benefits are included:
       </p>
       
-      <p class="product-explain">Discounts: coupon package, for one-time discount;\
-        Dynamic price overflow free (price overflow exists in setting where demand is far over supply): price overflow exempt on supply-demand imbalance scenarios;
-        Super speed order-taken: order been taken with priorities to save waiting time;
-        Driver red packet: build up ecosystem of thankfulness and trust that users can thank driver for their service with the red packet;
-        Airport pick-up service: for business people we provide guide at the arrival level;
-        Exclusive customer service: membership-only customer service team;
-      </p>
+      <ul>
+        <li class="product-explain">1. Discounts: coupon package, for one-time discount;</li>
+        <li class="product-explain">2. Dynamic price overflow free (price overflow exists in setting where demand is far over supply): price overflow exempt on supply-demand imbalance scenarios;</li>
+        <li class="product-explain">3. Super speed order-taken: order been taken with priorities to save waiting time;</li>
+        <li class="product-explain">4. Driver red packet: build up ecosystem of thankfulness and trust that users can thank driver for their service with the red packet;</li>
+        <li class="product-explain">5. Airport pick-up service: for business people we provide guide at the arrival level;</li>
+        <li class="product-explain">6. Exclusive customer service: membership-only customer service team;</li>
+      </ul>
     
       <div>
         <h2>Product Main Pages</h2>
       </div>
 
       <div>
-        <p class="product-explain-text">Premier Plus Membership Homepage</p>
+        <h3>Premier Plus Membership Homepage</h3>
         <img src = "images/premier_plus_homepage.png" class="product-explain-img" alt ="premier_plus_homepage">
       </div>
       
       <div>
-        <p class="product-explain-text">Premier Plus Membership Layer</p>
+        <h3>Premier Plus Membership Layer</h3>
         <img src = "images/premier_plus_layer.png" class="product-explain-img" alt ="premier_plus_layer">
       </div>
 
       <div>
-        <p class="product-explain-text">Premier Plus Membership Reminder</p>
+        <h3>Premier Plus Membership Reminder</h3>
         <img src = "images/premier_plus_reminder.png" class="product-explain-img" alt ="premier_pulus_reminder">
       </div>
     
-    </main>
-    
     <footer>
-      <p>Last Updated Oct 9, 2022</p>
+      <p>Last Updated Nov 8, 2022</p>
     </footer>
+  </div>
   </body>
 </html>
