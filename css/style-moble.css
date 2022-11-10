@@ -93,6 +93,7 @@ header {
     text-align: left;
     max-height: 25vh;
     overflow: scroll;
+    overflow-y: scroll;
 }
 
 .about-me-image {
